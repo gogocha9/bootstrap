@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>04_bootstrap의 다양한 스타일과 반응현 레이아웃 실습-문제</title>
+    <link href="../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="table-responsive">
+        <table class="table table-bordered table-condensed">
+            <tr>
+                <th class="info">title1</th>
+                <th class="warning">title2</th>
+                <th class="danger">title3</th>
+            </tr>
+            <tr class="success">
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+            </tr>
+            <tr class="active">
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, deleniti.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form>
+                    <div class="form-group has-success">
+                      <label for="exampleInputEmail1" class="control-label">이메일 주소</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+                    </div>
+                    <div class="form-group has-error">
+                      <label for="exampleInputPassword1" class="control-label">암호</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+                    </div>
+
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputGroupSuccess1">아이콘과 입력창</label>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                      </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputFile">파일 업로드</label>
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">여기에 블록레벨 도움말 예제</p>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 입력을 기억합니다
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">제출</button>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group has-success">
+                      <label for="exampleInputEmail1" class="control-label">이메일 주소</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+                    </div>
+                    <div class="form-group has-error">
+                      <label for="exampleInputPassword1" class="control-label">암호</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+                    </div>
+
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputGroupSuccess1">아이콘과 입력창</label>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                      </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputFile">파일 업로드</label>
+                      <input type="file" id="exampleInputFile">
+                      <p class="help-block">여기에 블록레벨 도움말 예제</p>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 입력을 기억합니다
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">제출</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</html>
