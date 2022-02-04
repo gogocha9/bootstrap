@@ -2,28 +2,34 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+  <title>col</title>
 
-    <title>03_디바이스마다 달라지는 레이아웃</title>
-    <link href="../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
-    <style>
-        div{
-            border: 1px solid #333;
-        }
-    </style>
+  <style>
+    div {
+      border: 1px solid #333;
+    }
+  </style>
+
+  <!-- 부트스트랩 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-8 col-sm-6 col-md-4 col-lg-8">col-xs-8 col-sm-6 col-md-4 col-lg-8</div>
-            <div class="col-xs-4 col-sm-6 col-md-8 col-lg-8">col-xs-4 col-sm-6 col-md-8 col-lg-8</div>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-4 col-lg-8">col-xs-8 col-sm-6 col-md-4 col-lg-8</div>
+      <div class="col-xs-4 col-sm-6 col-md-8 col-lg-8">col-xs-4 col-sm-6 col-md-8 col-lg-8</div>
     </div>
+  </div>
+
+  <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

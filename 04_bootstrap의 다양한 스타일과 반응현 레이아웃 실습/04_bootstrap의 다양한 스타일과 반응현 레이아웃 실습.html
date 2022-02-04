@@ -2,45 +2,63 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+  <title>col</title>
 
-    <title>04_bootstrap의 다양한 스타일과 반응현 레이아웃 실습</title>
-    <link href="../bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+  <style>
+    @media (min-width: 768px) {
+      #side {
+        height: 700px;
+      }
+
+      .container {
+        height: 650px;
+        overflow: hidden;
+      }
+    }
+  </style>
+
+  <!-- 부트스트랩 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <ol class="list-unstyled">
-        <li>내가 좋아하는 음식1</li>
-        <li>내가 좋아하는 음식2</li>
-        <li>내가 좋아하는 음식3</li>
-    </ol>
+  <ol class="list-unstyled">
+    <li>내가 좋아하는 음식1</li>
+    <li>내가 좋아하는 음식2</li>
+    <li>내가 좋아하는 음식3</li>
+  </ol>
 
-    <ul class="list-unstyled">
-        <li>내가 좋아하는 색상1</li>
-        <li>내가 좋아하는 색상2</li>
-        <li>내가 좋아하는 색상3</li>
-    </ul>
+  <ul class="list-unstyled">
+    <li>내가 좋아하는 색상1</li>
+    <li>내가 좋아하는 색상2</li>
+    <li>내가 좋아하는 색상3</li>
+  </ul>
 
-    <img src="https://via.placeholder.com/150" class="img-rounded">
-    <img src="https://via.placeholder.com/150" class="img-circle">
-    <img src="https://via.placeholder.com/150" class="img-thumbnail">
+  <img src="https://via.placeholder.com/150" class="img-rounded">
+  <img src="https://via.placeholder.com/150" class="img-circle">
+  <img src="https://via.placeholder.com/150" class="img-thumbnail">
 
-    <p class="text-muted">Lorem ipsum dolor sit amet.</p>
-    <p class="text-primary">Lorem ipsum dolor sit amet.</p>
-    <p class="text-info">Lorem ipsum dolor sit amet.</p>
-    <p class="text-warning">Lorem ipsum dolor sit amet.</p>
-    <p class="text-danger">Lorem ipsum dolor sit amet.</p>
-    <p class="text-success">Lorem ipsum dolor sit amet.</p>
+  <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+  <p class="text-primary">Lorem ipsum dolor sit amet.</p>
+  <p class="text-info">Lorem ipsum dolor sit amet.</p>
+  <p class="text-warning">Lorem ipsum dolor sit amet.</p>
+  <p class="text-danger">Lorem ipsum dolor sit amet.</p>
+  <p class="text-success">Lorem ipsum dolor sit amet.</p>
 
-    <p class="bg-primary"><span class="text-muted">Lorem ipsum dolor sit amet.</span></p>
-    <p class="bg-info">Lorem ipsum dolor sit amet.</p>
-    <p class="bg-warning">Lorem ipsum dolor sit amet.</p>
-    <p class="bg-danger">Lorem ipsum dolor sit amet.</p>
-    <p class="bg-success">Lorem ipsum dolor sit amet.</p>
+  <p class="bg-primary"><span class="text-muted">Lorem ipsum dolor sit amet.</span></p>
+  <p class="bg-info">Lorem ipsum dolor sit amet.</p>
+  <p class="bg-warning">Lorem ipsum dolor sit amet.</p>
+  <p class="bg-danger">Lorem ipsum dolor sit amet.</p>
+  <p class="bg-success">Lorem ipsum dolor sit amet.</p>
+
+  <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
